@@ -1,0 +1,45 @@
+<!--
+@Author: songqi
+@Date:   2017-03-30
+@Last modified by:   songqi
+@Last modified time: 2017-04-05
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>一个能动的矩形</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div#canvas-frame {
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            height: 600px;
+            background-color: #EEEEEE;
+        }
+    </style>
+</head>
+<body>
+    <a-scene>
+        <a-sky src="//fe.benmu-health.com/createjsDemo/images/qj.jpg"></a-sky>
+    </a-scene>
+    <!--<a-scene>
+        <a-assets>
+            <img id="texture" src="//fe.benmu-health.com/createjsDemo/images/qj.jpg">
+        </a-assets>
+
+        <a-box color="#FFF" width="4" height="10" depth="2"
+                position="0 2 -15" rotation="0 0 45" scale="2 0.5 3"
+                src="#texture">
+            <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
+        </a-box>
+    </a-scene>-->
+    <script src="//fe.benmu-health.com/createjsDemo/dist/js/aframe.js"></script>
+</body>
+</html>

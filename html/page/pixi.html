@@ -1,0 +1,49 @@
+<!--
+@Author: songqi
+@Date:   2017-03-30
+@Last modified by:   songqi
+@Last modified time: 2017-04-05
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>一个能动的矩形</title>
+    <meta charset="UTF-8">
+    <script>
+        window.PointerEvent = undefined;
+        document.ontouchmove = function(e) {
+            e.preventDefault();
+        };
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=750 user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no,email=no" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .scroll-container{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+            overflow: scroll;
+        }
+        .scroll-dom {
+            width: 5000px;
+            height: 8000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas-container"></div>
+    <div class="scroll-container"><div class="scroll-dom"></div></div>
+    <script src="//fe.benmu-health.com/createjsDemo/dist/js/pixi.js"></script>
+</body>
+</html>
